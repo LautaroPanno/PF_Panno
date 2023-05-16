@@ -1,0 +1,328 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background-image: radial-gradient(#91e7ff 2.5px, transparent 2.5px), radial-gradient(#91e7ff 2.5px, transparent 2.5px);
+    background-size: 90px 90px; 
+    background-position: 0 0, 43.5px 43.5px;*/
+    color: #ffffff;
+    background-color: #ffffff;
+    background-image: url(../multimedia/Fondo-web-claro-2.png);
+    font-family: "Noto Sans Thai", "sans-serif";
+    line-height: 1.5;
+}
+
+
+
+/* ------ barra de navegación-------- */
+
+.navbar{
+    background-color:#3a94d5 ;
+    background: linear-gradient(to bottom, #22b7e9, #3a94d5);
+    border-bottom: double 3px #ffffff;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .dropdown-menu{
+    background-color:#3a94d5 ;
+    background: linear-gradient(to bottom, #22b7e9, #3a94d5);
+    color: #fff;
+}
+
+.logo_img{
+    width: 290px;
+    
+}
+
+
+
+
+
+
+
+
+/* ------ seccion principal -------- */
+
+.section3Pasos{
+    text-align: center;
+    margin: 40px auto;
+    margin-top: 100px;
+    width: 80%;
+    border: 3px double #ffffff;
+    border-radius: 10px;
+    background-color:#3a94d5 ;
+    background: linear-gradient(to top, #25abd7, #2c75a9);
+}
+
+.section3Pasos h2{
+    font-weight: 600;
+}
+
+.enTresPasos{
+    margin-top: 15px;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.paso-1, .paso-2, .paso-3{
+    padding: 30px;
+    font-size: 1.2rem;
+}
+
+.card{
+    color: #ffffff;
+    width: 15rem;
+    padding: 10px;
+    margin: 30px;
+    background-color:#3a94d54e;
+    border: double #ffffff 3px;
+    border-radius: 20px;
+    text-align: center;
+}
+.card img{
+    border-radius: 10px;
+
+}
+
+.cartas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+/*------- Pagina de contacto------ */
+
+.tituloCont{
+    margin-top: 100px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.formulario{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 20px;
+    margin: 40px auto;
+    width: 95%;
+    border: 2px double white;
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(19, 47, 77, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/img_backround3.jpg);
+    background-size: cover;
+
+}
+
+
+
+
+
+
+
+
+/* -------- Medios de pago ---------- */
+
+.mediosDePago{
+
+    font-weight: 600;
+    text-align: center;
+}
+
+.titMediosDePago{
+    margin-top: 90px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px;
+    text-decoration: underline;
+}
+
+.efectivo, .transf, .mp{
+    padding: 20px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-align: center;
+
+}
+
+
+
+
+
+
+/* --------- Sobre Nosotros ------------- */
+
+.sobreNosotros{
+    font-style:italic;
+    margin-top: 80px;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+.about{
+    padding: 25px;
+}
+
+.conocenos h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.conocenos, .conocenos__2, .conocenos__3{
+    padding-bottom: 30px;
+    font-size: 1.2rem;
+}
+.conocenos__3 a{
+    font-weight: 600;
+    color: #24699b;
+}
+.conocenos__3 a:visited{
+    color: #24699b;
+}
+
+
+
+
+
+
+
+
+/* ----------- SECCIONES DE SERVICIOS------------ */
+
+/* ---formatos de textos---- */
+
+.textCort h1, .textTapi h1, .textAlf h1{
+    font-style:italic;
+    margin-top: 100px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.textCort, .textTapi, .textAlf{
+    padding: 10px 30px;
+    text-align: center;
+}
+
+.textCort p, .textTapi p, .textAlf p{
+    font-size: 1.5rem;
+}
+
+
+/* -------- pagina de cortinas ---------------- */
+
+.imgCort{ /* carousel */
+    width: 40%;
+    margin: 0 auto;
+    z-index: 10;
+    margin-bottom: 30px;
+    border: 2px double #fff;
+}
+
+
+/* ---- pagina de tapizados ----- */
+
+.carouselSillon{
+    width: 40%;
+    margin: 0 auto;
+    z-index: 10;
+    margin-bottom: 30px;
+    border: #fff double 3px;
+}
+
+
+
+/* ------- Pagina de alfombras ------- */
+/* .imgAlf{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+align-items:center;
+padding: 20px;
+} */
+
+.imgAlf img{
+    width: 300px;
+    height: 300px;
+    margin: 35px;
+    border-radius: 20px;
+    border: double #6e6b6bc3 4px;
+    opacity: .9;
+    object-fit: cover;
+    object-position: center ;
+}
+.imgAlf img:hover{
+    opacity: 1;
+    border: double #ffffff 5px;
+}
+
+
+
+
+
+
+
+
+
+/* -------- footer --------- */
+
+
+.footer{
+
+    border-top: double 3px #ffffff;
+}
+
+.footer__redes{
+    display: flex;
+    margin: 20px auto;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+}
+
+.footer__redes__img{
+    height: 40px;
+    padding: 10px;
+}
+.footer__redes__img:hover{
+    cursor: pointer;
+}
+
+.copy{
+    color: white;
+    text-align: center;
+    align-self: flex-end;
+    font-size: .9rem;
+}
+
+@media screen and (max-width: 380px){
+    .logo_img{
+        width: 200px;
+    }
+}
