@@ -21,7 +21,7 @@ body{
 
 .navbar{
     background-color:#3a94d5 ;
-    background: linear-gradient(to bottom, #22b7e9, #3a94d5);
+    background: linear-gradient(to bottom, #35c6f7, #47a8ed);
     border-bottom: double 3px #ffffff;
     color: white;
     position: fixed;
@@ -32,7 +32,7 @@ body{
 
 .navbar .dropdown-menu{
     background-color:#3a94d5 ;
-    background: linear-gradient(to bottom, #22b7e9, #3a94d5);
+    background: linear-gradient(to bottom, #22b7e9, #42a3e8);
     color: #fff;
 }
 
@@ -58,7 +58,7 @@ body{
     border: 3px double #ffffff;
     border-radius: 10px;
     background-color:#3a94d5 ;
-    background: linear-gradient(to top, #25abd7, #2c75a9);
+    background: linear-gradient(to top, #4ccbf5, #48a4e6);
 }
 
 .section3Pasos h2{
@@ -232,12 +232,17 @@ body{
 .textCort p, .textTapi p, .textAlf p{
     font-size: 1.5rem;
 }
-
+.textCort p{
+    padding: 20px;
+    border: #fff solid 2px;
+    border-radius: 50px;
+    margin: 30px;
+}
 
 /* -------- pagina de cortinas ---------------- */
 
 .imgCort{ /* carousel */
-    width: 40%;
+    width: 70%;
     margin: 0 auto;
     z-index: 10;
     margin-bottom: 30px;
@@ -248,7 +253,7 @@ body{
 /* ---- pagina de tapizados ----- */
 
 .carouselSillon{
-    width: 40%;
+    width: 70%;
     margin: 0 auto;
     z-index: 10;
     margin-bottom: 30px;
