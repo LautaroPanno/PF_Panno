@@ -13,7 +13,6 @@ body{
 }
 
 
-
 /* ------ barra de navegación-------- */
 
 .navbar{
@@ -45,7 +44,7 @@ body{
 
 
 
-/* ------ seccion principal -------- */
+/* ------ seccion principal index -------- */
 
 .section3Pasos{
     text-align: center;
@@ -73,6 +72,10 @@ body{
     font-size: 1.2rem;
 }
 
+
+
+/*--- fotos de la pagina index--- */
+
 .card{
     color: #ffffff;
     width: 15rem;
@@ -83,9 +86,9 @@ body{
     border-radius: 20px;
     text-align: center;
 }
+
 .card img{
     border-radius: 10px;
-
 }
 
 .cartas{
@@ -107,6 +110,7 @@ body{
 
 /*------- Pagina de contacto------ */
 
+/* titulo */
 .tituloCont{
     margin-top: 100px;
     padding: 10px;
@@ -116,6 +120,7 @@ body{
     text-decoration: underline;
 }
 
+/* formulario de contacto */
 .formulario{
     text-align: center;
     font-size: 1.1rem;
@@ -153,7 +158,7 @@ body{
 /* -------- Medios de pago ---------- */
 
 
-
+/* titulo */
 .titMediosDePago{
     margin-top: 100px;
     font-size: 1.8rem;
@@ -164,19 +169,22 @@ body{
     text-decoration: underline;
 }
 
+/* contenedores generales */
 .mediosDePago{
     text-align: center;
 }
+.efectivo, .transf, .mp{
+    padding: 20px;
+}
 
+/* sub-titulos */
 .mediosDePago h2{
     font-size: 1.2rem;
     font-weight: bold;
     padding: 15px;
 }
 
-.efectivo, .transf, .mp{
-    padding: 20px;
-}
+
 
 
 
@@ -186,6 +194,7 @@ body{
 
 /* --------- Sobre Nosotros ------------- */
 
+/* titulo */
 .sobreNosotros{
     font-style:italic;
     margin-top: 80px;
@@ -196,16 +205,20 @@ body{
     margin-bottom: 20px;
     text-decoration: underline;
 }
+
+/* contenedor */
 .about{
     padding: 25px;
 }
 
+/* subtitulo */
 .conocenos h2{
     font-weight: bold;
     text-decoration: underline;
 
 }
 
+/* subtitulos de menor importancia */
 .lavadoInst h3 , .lavadoDom h3{
     font-weight: bold;
     text-decoration: underline;
@@ -213,18 +226,20 @@ body{
     
 }
 
+/* textos */
 .conocenos p{
     font-style: italic;
     font-size: 1.2rem;
     padding-bottom: 30px;
 }
+
 .lavadoInst, .lavadoDom{
     padding-bottom: 30px;
     font-size: 1.2rem;
 
 }
 
-
+/* link a pagina de contacto */
 .lavadoDom a{
     font-weight: bold;
     color: #24699b;
@@ -278,7 +293,8 @@ body{
 
 /* -------- pagina de cortinas ---------------- */
 
-.imgCort{ /* carousel */
+/* carousel */
+.imgCort{ 
     width: 70%;
     margin: 0 auto;
     z-index: 10;
@@ -289,6 +305,7 @@ body{
 
 /* ---- pagina de tapizados ----- */
 
+/* carousel */
 .carouselSillon{
     width: 70%;
     margin: 0 auto;
@@ -297,6 +314,8 @@ body{
     border: #fff double 3px;
 }
 
+
+/*--- galeria de fotos responsive (page Alfombras)---- */
 .imgAlf img{
     width: 300px;
     height: 300px;
