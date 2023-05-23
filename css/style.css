@@ -5,11 +5,8 @@
 }
 
 body{
-    /* background-image: radial-gradient(#91e7ff 2.5px, transparent 2.5px), radial-gradient(#91e7ff 2.5px, transparent 2.5px);
-    background-size: 90px 90px; 
-    background-position: 0 0, 43.5px 43.5px;*/
     color: #ffffff;
-    background-color: #ffffff;
+    background-color:#3a94d5;
     background-image: url(../multimedia/Fondo-web-claro-2.png);
     font-family: "Noto Sans Thai", "sans-serif";
     line-height: 1.5;
@@ -61,8 +58,8 @@ body{
     background: linear-gradient(to top, #4ccbf5, #48a4e6);
 }
 
-.section3Pasos h2{
-    font-weight: 600;
+.section3Pasos h1, .section3Pasos h2{
+    font-weight: bold;
 }
 
 .enTresPasos{
@@ -121,7 +118,7 @@ body{
 
 .formulario{
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: bold;
     padding: 20px;
     margin: 40px auto;
@@ -130,10 +127,23 @@ body{
     border-radius: 10px;
     background-image: linear-gradient(rgba(19, 47, 77, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/img_backround3.jpg);
     background-size: cover;
-
 }
 
+.formulario label{
+    margin-bottom: 25px;
+}
+.formulario textarea{
+    padding: 20px;
 
+}
+.botonesForm{
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
 
 
 
@@ -142,28 +152,32 @@ body{
 
 /* -------- Medios de pago ---------- */
 
-.mediosDePago{
 
-    font-weight: 600;
-    text-align: center;
-}
 
 .titMediosDePago{
-    margin-top: 90px;
-    font-size: 1.5rem;
-    font-weight: 600;
+    margin-top: 100px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-style: italic;
     text-align: center;
     padding: 10px;
     text-decoration: underline;
 }
 
+.mediosDePago{
+    text-align: center;
+}
+
+.mediosDePago h2{
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 15px;
+}
+
 .efectivo, .transf, .mp{
     padding: 20px;
-    font-weight: 600;
-    font-size: 1.2rem;
-    text-align: center;
-
 }
+
 
 
 
@@ -176,7 +190,7 @@ body{
     font-style:italic;
     margin-top: 80px;
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: bold;
     text-align: center;
     padding: 10px;
     margin-bottom: 20px;
@@ -187,18 +201,35 @@ body{
 }
 
 .conocenos h2{
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: bold;
+    text-decoration: underline;
+
 }
-.conocenos, .conocenos__2, .conocenos__3{
+
+.lavadoInst h3 , .lavadoDom h3{
+    font-weight: bold;
+    text-decoration: underline;
+    font-style: italic;
+    
+}
+
+.conocenos p{
+    font-style: italic;
+    font-size: 1.2rem;
+    padding-bottom: 30px;
+}
+.lavadoInst, .lavadoDom{
     padding-bottom: 30px;
     font-size: 1.2rem;
+
 }
-.conocenos__3 a{
-    font-weight: 600;
+
+
+.lavadoDom a{
+    font-weight: bold;
     color: #24699b;
 }
-.conocenos__3 a:visited{
+.lavadoDom a:visited{
     color: #24699b;
 }
 
@@ -214,10 +245,10 @@ body{
 /* ---formatos de textos---- */
 
 .textCort h1, .textTapi h1, .textAlf h1{
-    font-style:italic;
+    font-style: italic;
     margin-top: 100px;
     font-size: 1.8rem;
-    font-weight: 600;
+    font-weight: bold;
     text-align: center;
     padding: 10px;
     margin-bottom: 20px;
@@ -237,7 +268,13 @@ body{
     border: #fff solid 2px;
     border-radius: 50px;
     margin: 30px;
+    font-style: italic;
 }
+.textAlf__ejemplos{
+    font-style: italic;
+}
+
+
 
 /* -------- pagina de cortinas ---------------- */
 
@@ -259,18 +296,6 @@ body{
     margin-bottom: 30px;
     border: #fff double 3px;
 }
-
-
-
-/* ------- Pagina de alfombras ------- */
-/* .imgAlf{
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: center;
-align-items:center;
-padding: 20px;
-} */
 
 .imgAlf img{
     width: 300px;
