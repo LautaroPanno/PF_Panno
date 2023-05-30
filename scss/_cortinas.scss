@@ -1,0 +1,73 @@
+//  pagina "Sección de cortinas" //
+main{
+    .cortinas{
+        // contenedor //
+        .textCort{
+        padding: 10px 30px;
+        text-align: center;
+            // titulo //
+            .tituloCort{
+                background-color: $celeste;
+                width: 80%;
+                margin: 0 auto;
+                text-align: center;
+                border: $azuloscuro 3px solid;
+                font-style: italic;
+                margin-top: 120px;
+                font-size: 1.7rem;
+                font-weight: bold;
+                text-align: center;
+                padding: 20px;
+                border-radius: 60px;
+                transition: all 1s;
+            }
+            // transicion //
+            .tituloCort:hover{
+                border-radius: 0px;
+                border: $azuloscuro 3px solid;
+            }
+            // subtitulo //
+            .subtCort{
+                text-decoration: underline;
+                margin: 40px 0;
+                font-size: 1.5rem;
+            }
+            // parrafo //
+            p{
+                font-size: 1.5rem;
+                padding: 20px;
+                margin: 30px;
+                font-style: italic;
+                border: $azuloscuro solid 2px;
+                border-radius: 50px;
+            }
+            // subtitulo 2 //
+            .subtCort__2{
+                padding: 40px 0;
+            }
+            // remarcar //
+            span{
+                font-weight: bold;
+                font-style: italic;
+            }
+        }
+    }
+}
+/* carousel con imagenes*/
+// contenedor //
+.imgCort{ 
+    width: 50%;
+    margin: 0 auto;
+    z-index: 10;
+    margin-bottom: 30px;
+    border: 2px double #fff;
+    // titulos de las fotos //
+    h4{
+        font-weight: bold;
+        font-style: italic;
+        color: #ffffff;
+        background-color: #5f5f5f93;
+        border-radius: 30px;
+        padding: 10px;
+    }
+}

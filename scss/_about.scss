@@ -1,0 +1,76 @@
+/// Pagina "Sobre Nosotros" //
+main{
+    /* contenedor */
+    .about{
+    padding: 25px;
+    margin-top: 100px;
+        /* titulo */
+        .sobreNosotros{
+            font-style:italic;
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 20px;
+            text-decoration: underline;
+        }
+        .conocenos{
+            /* subtitulo 1*/
+            .about__conocenos__h2{
+                font-weight: bold;
+            }
+            // parrafo 1 //
+            .about__conocenos__p{
+                font-style: italic;
+                font-size: 1.2rem;
+                padding-bottom: 30px;
+                span{
+                    font-weight: bold;
+                }
+            }
+        }
+        //  subtitulo 2 /
+        .lavadoInst{
+            .lavadoInst__h3{
+            font-weight: bold;
+            text-decoration: underline;
+            font-style: italic;
+            }
+            // parrafo 2 //
+            .lavadoInst__p{
+                font-size: 1.2rem;
+                padding-bottom: 30px;
+            }
+        }
+        .lavadoDom{
+            // subtitulo 3 //
+            .lavadoDom__h3{
+                    font-weight: bold;
+                    text-decoration: underline;
+                    font-style: italic;
+            }
+            // parrafo 3//
+            .lavadoDom__p{
+                font-size: 1.2rem;
+                padding-bottom: 30px;
+
+                /* link a pagina de contacto */
+                a{
+                    font-weight: bold;
+                    text-decoration: none;
+                    color: $azulfuente;
+                    transition: all .3s;
+                }
+                a:hover{
+                    color: #24699b;
+                }
+                a:visited{
+                    color: #24699b;
+                }
+                span{
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

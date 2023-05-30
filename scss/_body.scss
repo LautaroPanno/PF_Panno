@@ -1,0 +1,12 @@
+// reseteo + estilos body //
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: $azulfuente;
+    background-color: $colorfondo;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}

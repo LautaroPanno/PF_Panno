@@ -1,0 +1,83 @@
+// Index /////
+main{
+    // seccion con 3 items ///
+    .trespasos{
+        text-align: center;
+        margin: 40px auto;
+        margin-top: 120px;
+        width: 80%;
+        border: 3px double $azulfuente;
+        border-radius: 10px;
+        background: $celeste;
+        background: radial-gradient(circle, #cce9f9 0%, $celeste 70%);
+    }
+    // titulo //
+    .trespasos__titulo h1{
+        color: $azuloscuro;
+        font-weight: bold;
+        margin: 20px 10px;
+        font-style: italic;
+    }
+    // subtitulos //
+    .trespasos h3{
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    // iconos //
+    .trespasos img{
+        height: 40px;
+        margin-bottom: 25px;
+        text-align: center;
+        scale: 1.1;
+        transition: all .3s;
+    }
+    // transicion //
+    .trespasos img:hover{
+        scale: 1.6;
+    }
+    // espaciado general
+    .paso-1, .paso-2, .paso-3{
+        padding: 35px;
+        font-size: 1.2rem;
+    }
+    // estilos de texto parrafos //
+    .paso-1 p, .paso-2 p, .paso-3 p{
+        font-weight: 400;
+        margin-top: 10px;
+        span{
+            font-weight: bold;
+            font-style: italic;
+        }
+    }
+}
+
+    // cards con resultados del trabajo //
+    .cartas{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        // contenedor //
+        .card{
+            color: $azulfuente;
+            background-color: $celeste;
+            width: 15rem;
+            padding: 10px;
+            margin: 30px;
+            border: double #395b76d5 3px;
+            border-radius: 0px;
+            text-align: center;
+            transition: all .5s;
+        }
+        // transicion //
+        .card:hover{
+            border: double $azuloscuro 3px;
+            padding: 15px;
+            border-radius: 25px;
+        }
+        // texto card//
+        .card p{
+            font-weight: bold;
+        }
+    }
+    // fin de las cards //

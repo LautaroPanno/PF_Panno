@@ -1,0 +1,29 @@
+// footer //
+.footer{
+    height: 80px;
+    border-top: double 3px #ffffff;
+    background-color: $azulbg;
+    // logos de redes sociales //
+    .footer__redes{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
+        align-items: flex-end;
+    }
+    // tamaño imgs footer//
+    .footer__redes__img{
+        height: 40px;
+        padding: 10px;
+    }
+    // cursor //
+    .footer__redes__img:hover{
+        cursor: pointer;
+    }
+    // texto copyright //
+    .copy{
+        color: #ffffff;
+        text-align: center;
+        font-size: .9rem;
+        padding-bottom: 5px;
+    }
+}

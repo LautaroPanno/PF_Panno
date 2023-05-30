@@ -1,377 +1,396 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-body{
-    color: #ffffff;
-    background-color:#3a94d5;
-    background-image: url(../multimedia/Fondo-web-claro-2.png);
-    font-family: "Noto Sans Thai", "sans-serif";
-    line-height: 1.5;
-}
+body {
+  color: #143b5b;
+  background-color: #bbd9fc;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5; }
 
-
-/* ------ barra de navegación-------- */
-
-.navbar{
-    background-color:#3a94d5 ;
-    background: linear-gradient(to bottom, #35c6f7, #47a8ed);
-    border-bottom: double 3px #ffffff;
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  header .navbar {
+    background-color: #164061;
+    border-bottom: #ffffff double 3px;
     color: white;
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 1000;
-}
+    z-index: 1000; }
+    header .navbar .logo_img {
+      scale: 0.9;
+      margin-left: 0px;
+      transition: all 1.2s; }
+    header .navbar .logo_img:hover {
+      scale: 1.0; }
+    header .navbar .navbar-collapse {
+      text-align: right;
+      justify-content: flex-end; }
+    header .navbar .dropdown-menu {
+      background-color: #0a5592;
+      border: #013056 double 2px;
+      text-align: end; }
+    header .navbar .dropdown-item {
+      color: #c5caca; }
+    header .navbar .dropdown-item:hover {
+      color: #ffffff;
+      background-color: #085da300; }
 
-.navbar .dropdown-menu{
-    background-color:#3a94d5 ;
-    background: linear-gradient(to bottom, #22b7e9, #42a3e8);
-    color: #fff;
-}
-
-.logo_img{
-    width: 290px;
-    
-}
-
-
-
-
-
-
-
-
-/* ------ seccion principal index -------- */
-
-.section3Pasos{
-    text-align: center;
-    margin: 40px auto;
-    margin-top: 100px;
-    width: 80%;
-    border: 3px double #ffffff;
-    border-radius: 10px;
-    background-color:#3a94d5 ;
-    background: linear-gradient(to top, #4ccbf5, #48a4e6);
-}
-
-.section3Pasos h1, .section3Pasos h2{
-    font-weight: bold;
-}
-
-.enTresPasos{
-    margin-top: 15px;
-    text-decoration: underline;
-    font-style: italic;
-}
-
-.paso-1, .paso-2, .paso-3{
-    padding: 30px;
-    font-size: 1.2rem;
-}
-
-
-
-/*--- fotos de la pagina index--- */
-
-.card{
+.footer {
+  height: 80px;
+  border-top: double 3px #ffffff;
+  background-color: #164061; }
+  .footer .footer__redes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end; }
+  .footer .footer__redes__img {
+    height: 40px;
+    padding: 10px; }
+  .footer .footer__redes__img:hover {
+    cursor: pointer; }
+  .footer .copy {
     color: #ffffff;
+    text-align: center;
+    font-size: .9rem;
+    padding-bottom: 5px; }
+
+main .trespasos {
+  text-align: center;
+  margin: 40px auto;
+  margin-top: 120px;
+  width: 80%;
+  border: 3px double #143b5b;
+  border-radius: 10px;
+  background: #aad9ffe6;
+  background: radial-gradient(circle, #cce9f9 0%, #aad9ffe6 70%); }
+
+main .trespasos__titulo h1 {
+  color: #10304a;
+  font-weight: bold;
+  margin: 20px 10px;
+  font-style: italic; }
+
+main .trespasos h3 {
+  font-weight: bold;
+  text-decoration: underline; }
+
+main .trespasos img {
+  height: 40px;
+  margin-bottom: 25px;
+  text-align: center;
+  scale: 1.1;
+  transition: all .3s; }
+
+main .trespasos img:hover {
+  scale: 1.6; }
+
+main .paso-1, main .paso-2, main .paso-3 {
+  padding: 35px;
+  font-size: 1.2rem; }
+
+main .paso-1 p, main .paso-2 p, main .paso-3 p {
+  font-weight: 400;
+  margin-top: 10px; }
+  main .paso-1 p span, main .paso-2 p span, main .paso-3 p span {
+    font-weight: bold;
+    font-style: italic; }
+
+.cartas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+  .cartas .card {
+    color: #143b5b;
+    background-color: #aad9ffe6;
     width: 15rem;
     padding: 10px;
     margin: 30px;
-    background-color:#3a94d54e;
-    border: double #ffffff 3px;
-    border-radius: 20px;
+    border: double #395b76d5 3px;
+    border-radius: 0px;
     text-align: center;
-}
-
-.card img{
-    border-radius: 10px;
-}
-
-.cartas{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-
-
-
-
-
-
-
-
-
+    transition: all .5s; }
+  .cartas .card:hover {
+    border: double #10304a 3px;
+    padding: 15px;
+    border-radius: 25px; }
+  .cartas .card p {
+    font-weight: bold; }
 
 /*------- Pagina de contacto------ */
-
-/* titulo */
-.tituloCont{
-    margin-top: 100px;
-    padding: 10px;
-    font-weight: bold;
-    font-size: 2rem;
+main {
+  /* titulo */
+  /* formulario de contacto */ }
+  main .tituloCont {
+    background-color: #aad9ffe6;
+    width: 70%;
+    margin: 0 auto;
     text-align: center;
-    text-decoration: underline;
-}
-
-/* formulario de contacto */
-.formulario{
+    border: #10304a 3px solid;
+    border-radius: 60px;
+    margin-top: 120px;
+    font-weight: bold;
+    font-size: 1.7rem;
+    padding: 20px;
+    border-radius: 60px;
+    transition: all 1s; }
+  main .tituloCont:hover {
+    border-radius: 0px; }
+  main .formulario__container {
+    color: #ffffff;
     text-align: center;
     font-size: 1.1rem;
     font-weight: bold;
-    padding: 20px;
+    padding: 30px;
     margin: 40px auto;
     width: 95%;
-    border: 2px double white;
+    border: 2px double #10304a;
     border-radius: 10px;
-    background-image: linear-gradient(rgba(19, 47, 77, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/img_backround3.jpg);
-    background-size: cover;
-}
+    background-image: linear-gradient(#132f4d80, #00000080), url(../multimedia/img_backround3.jpg);
+    background-size: cover; }
+    main .formulario__container label {
+      margin-bottom: 25px; }
+    main .formulario__container textarea {
+      padding: 20px; }
+    main .formulario__container .botonesForm {
+      margin: 15px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 25px;
+      justify-content: center; }
 
-.formulario label{
-    margin-bottom: 25px;
-}
-.formulario textarea{
-    padding: 20px;
-
-}
-.botonesForm{
-    margin: 15px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 25px;
-    justify-content: center;
-}
-
-
-
-
-
-
-/* -------- Medios de pago ---------- */
-
-
-/* titulo */
-.titMediosDePago{
-    margin-top: 100px;
-    font-size: 1.8rem;
-    font-weight: bold;
-    font-style: italic;
-    text-align: center;
-    padding: 10px;
-    text-decoration: underline;
-}
-
-/* contenedores generales */
-.mediosDePago{
-    text-align: center;
-}
-.efectivo, .transf, .mp{
-    padding: 20px;
-}
-
-/* sub-titulos */
-.mediosDePago h2{
-    font-size: 1.2rem;
-    font-weight: bold;
-    padding: 15px;
-}
-
-
-
-
-
-
-
-
-
-/* --------- Sobre Nosotros ------------- */
-
-/* titulo */
-.sobreNosotros{
-    font-style:italic;
-    margin-top: 80px;
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: center;
-    padding: 10px;
-    margin-bottom: 20px;
-    text-decoration: underline;
-}
-
-/* contenedor */
-.about{
+main {
+  /* contenedor */ }
+  main .about {
     padding: 25px;
-}
-
-/* subtitulo */
-.conocenos h2{
-    font-weight: bold;
-    text-decoration: underline;
-
-}
-
-/* subtitulos de menor importancia */
-.lavadoInst h3 , .lavadoDom h3{
-    font-weight: bold;
-    text-decoration: underline;
-    font-style: italic;
-    
-}
-
-/* textos */
-.conocenos p{
-    font-style: italic;
-    font-size: 1.2rem;
-    padding-bottom: 30px;
-}
-
-.lavadoInst, .lavadoDom{
-    padding-bottom: 30px;
-    font-size: 1.2rem;
-
-}
-
-/* link a pagina de contacto */
-.lavadoDom a{
-    font-weight: bold;
-    color: #24699b;
-}
-.lavadoDom a:visited{
-    color: #24699b;
-}
-
-
-
-
-
-
-
-
-/* ----------- SECCIONES DE SERVICIOS------------ */
-
-/* ---formatos de textos---- */
-
-.textCort h1, .textTapi h1, .textAlf h1{
-    font-style: italic;
     margin-top: 100px;
-    font-size: 1.8rem;
+    /* titulo */ }
+    main .about .sobreNosotros {
+      font-style: italic;
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+      padding: 10px;
+      margin-bottom: 20px;
+      text-decoration: underline; }
+    main .about .conocenos {
+      /* subtitulo 1*/ }
+      main .about .conocenos .about__conocenos__h2 {
+        font-weight: bold; }
+      main .about .conocenos .about__conocenos__p {
+        font-style: italic;
+        font-size: 1.2rem;
+        padding-bottom: 30px; }
+        main .about .conocenos .about__conocenos__p span {
+          font-weight: bold; }
+    main .about .lavadoInst .lavadoInst__h3 {
+      font-weight: bold;
+      text-decoration: underline;
+      font-style: italic; }
+    main .about .lavadoInst .lavadoInst__p {
+      font-size: 1.2rem;
+      padding-bottom: 30px; }
+    main .about .lavadoDom .lavadoDom__h3 {
+      font-weight: bold;
+      text-decoration: underline;
+      font-style: italic; }
+    main .about .lavadoDom .lavadoDom__p {
+      font-size: 1.2rem;
+      padding-bottom: 30px;
+      /* link a pagina de contacto */ }
+      main .about .lavadoDom .lavadoDom__p a {
+        font-weight: bold;
+        text-decoration: none;
+        color: #143b5b;
+        transition: all .3s; }
+      main .about .lavadoDom .lavadoDom__p a:hover {
+        color: #24699b; }
+      main .about .lavadoDom .lavadoDom__p a:visited {
+        color: #24699b; }
+      main .about .lavadoDom .lavadoDom__p span {
+        font-weight: bold; }
+
+/* --------pagina "Medios de pago" ---------- */
+main .mediosDePago {
+  text-align: center; }
+  main .mediosDePago .row {
+    /* titulo */
+    /* subtitulos */ }
+    main .mediosDePago .row .titMediosDePago {
+      margin: 0 auto;
+      background-color: #aad9ffe6;
+      width: 60%;
+      text-align: center;
+      border: #10304a 3px solid;
+      font-size: 1.7rem;
+      font-weight: bold;
+      font-style: italic;
+      text-align: center;
+      margin-top: 120px;
+      margin-bottom: 10px;
+      padding: 20px;
+      border-radius: 60px;
+      transition: all 1s; }
+    main .mediosDePago .row .titMediosDePago:hover {
+      border-radius: 0px; }
+    main .mediosDePago .row .mp {
+      height: 70px; }
+    main .mediosDePago .row img {
+      padding: 10px;
+      scale: 1.0;
+      transition: all .5s; }
+    main .mediosDePago .row img:hover {
+      scale: 1.4; }
+    main .mediosDePago .row .subt__mediosdePago {
+      font-size: 1.2rem;
+      font-weight: bold;
+      padding: 15px; }
+    main .mediosDePago .row .efectivo, main .mediosDePago .row .transf, main .mediosDePago .row .mercPago {
+      margin: 40px 0; }
+
+main .cortinas .textCort {
+  padding: 10px 30px;
+  text-align: center; }
+  main .cortinas .textCort .tituloCort {
+    background-color: #aad9ffe6;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    border: #10304a 3px solid;
+    font-style: italic;
+    margin-top: 120px;
+    font-size: 1.7rem;
     font-weight: bold;
     text-align: center;
-    padding: 10px;
-    margin-bottom: 20px;
-    text-decoration: underline;
-}
-
-.textCort, .textTapi, .textAlf{
-    padding: 10px 30px;
-    text-align: center;
-}
-
-.textCort p, .textTapi p, .textAlf p{
-    font-size: 1.5rem;
-}
-.textCort p{
     padding: 20px;
-    border: #fff solid 2px;
-    border-radius: 50px;
+    border-radius: 60px;
+    transition: all 1s; }
+  main .cortinas .textCort .tituloCort:hover {
+    border-radius: 0px;
+    border: #10304a 3px solid; }
+  main .cortinas .textCort .subtCort {
+    text-decoration: underline;
+    margin: 40px 0;
+    font-size: 1.5rem; }
+  main .cortinas .textCort p {
+    font-size: 1.5rem;
+    padding: 20px;
     margin: 30px;
     font-style: italic;
-}
-.textAlf__ejemplos{
+    border: #10304a solid 2px;
+    border-radius: 50px; }
+  main .cortinas .textCort .subtCort__2 {
+    padding: 40px 0; }
+  main .cortinas .textCort span {
+    font-weight: bold;
+    font-style: italic; }
+
+/* carousel con imagenes*/
+.imgCort {
+  width: 50%;
+  margin: 0 auto;
+  z-index: 10;
+  margin-bottom: 30px;
+  border: 2px double #fff; }
+  .imgCort h4 {
+    font-weight: bold;
     font-style: italic;
-}
+    color: #ffffff;
+    background-color: #5f5f5f93;
+    border-radius: 30px;
+    padding: 10px; }
 
-
-
-/* -------- pagina de cortinas ---------------- */
-
-/* carousel */
-.imgCort{ 
-    width: 70%;
+main .alfombras .textAlf {
+  padding: 10px 30px;
+  text-align: center; }
+  main .alfombras .textAlf .tituloAlf {
+    background-color: #aad9ffe6;
+    width: 80%;
     margin: 0 auto;
-    z-index: 10;
-    margin-bottom: 30px;
-    border: 2px double #fff;
-}
-
-
-/* ---- pagina de tapizados ----- */
-
-/* carousel */
-.carouselSillon{
-    width: 70%;
-    margin: 0 auto;
-    z-index: 10;
-    margin-bottom: 30px;
-    border: #fff double 3px;
-}
-
+    text-align: center;
+    border: #10304a 3px solid;
+    font-style: italic;
+    margin-top: 120px;
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    border-radius: 50px;
+    transition: all 1s; }
+  main .alfombras .textAlf .tituloAlf:hover {
+    border-radius: 0px;
+    border: #10304a 3px solid; }
+  main .alfombras .textAlf .descAlf {
+    font-size: 1.5rem;
+    padding: 20px;
+    margin: 30px; }
+  main .alfombras .textAlf .textAlf__ejemplos {
+    font-size: 1.5rem; }
+  main .alfombras .textAlf span {
+    font-weight: bold;
+    font-style: italic; }
 
 /*--- galeria de fotos responsive (page Alfombras)---- */
-.imgAlf img{
-    width: 300px;
-    height: 300px;
-    margin: 35px;
-    border-radius: 20px;
-    border: double #6e6b6bc3 4px;
-    opacity: .9;
-    object-fit: cover;
-    object-position: center ;
-}
-.imgAlf img:hover{
-    opacity: 1;
-    border: double #ffffff 5px;
-}
+.imgAlf img {
+  width: 250px;
+  height: 250px;
+  margin: 30px;
+  border-radius: 20px;
+  border: double #395b76d5 3px;
+  opacity: .9;
+  object-fit: cover;
+  object-position: center;
+  transition: all 1s; }
 
+.imgAlf img:hover {
+  opacity: 1;
+  border: double #10304a 3px;
+  width: 270px;
+  height: 270px;
+  border-radius: 0px; }
 
-
-
-
-
-
-
-
-/* -------- footer --------- */
-
-
-.footer{
-
-    border-top: double 3px #ffffff;
-}
-
-.footer__redes{
-    display: flex;
-    margin: 20px auto;
-    flex-wrap: wrap;
-    justify-content:center;
-    align-items: center;
-}
-
-.footer__redes__img{
-    height: 40px;
-    padding: 10px;
-}
-.footer__redes__img:hover{
-    cursor: pointer;
-}
-
-.copy{
-    color: white;
+main .tapizados .textTapi {
+  padding: 10px 30px;
+  text-align: center; }
+  main .tapizados .textTapi .tituloTapi {
+    background-color: #aad9ffe6;
+    width: 80%;
+    margin: 0 auto;
     text-align: center;
-    align-self: flex-end;
-    font-size: .9rem;
-}
+    border: #10304a 3px solid;
+    font-style: italic;
+    margin-top: 120px;
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    border-radius: 60px;
+    transition: all 1s; }
+  main .tapizados .textTapi .tituloTapi:hover {
+    border-radius: 0px;
+    border: #10304a 3px solid; }
+  main .tapizados .textTapi .descTapi {
+    font-size: 1.5rem;
+    padding: 20px;
+    margin: 30px; }
+  main .tapizados .textTapi .text__decor {
+    font-style: italic; }
+  main .tapizados .textTapi .text__decor2 {
+    font-weight: bold;
+    font-style: italic; }
 
-@media screen and (max-width: 380px){
-    .logo_img{
-        width: 200px;
-    }
-}
+/* carousel con imagenes */
+.carouselSillon {
+  width: 40%;
+  margin: 0 auto;
+  z-index: 10;
+  margin-bottom: 30px;
+  border: 2px double #fff; }

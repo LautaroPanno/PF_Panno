@@ -1,0 +1,53 @@
+/* --------pagina "Medios de pago" ---------- */
+main{
+    // contenedor //
+    .mediosDePago{
+        text-align: center;
+        .row{
+            /* titulo */
+            .titMediosDePago{
+                margin: 0 auto;
+                background-color: $celeste;
+                width: 60%;
+                text-align: center;
+                border: $azuloscuro 3px solid;
+                font-size: 1.7rem;
+                font-weight: bold;
+                font-style: italic;
+                text-align: center;
+                margin-top: 120px;
+                margin-bottom: 10px;
+                padding: 20px;
+                border-radius: 60px;
+                transition: all 1s;
+            }
+            // transicion //
+            .titMediosDePago:hover{
+                border-radius: 0px;
+            }
+            // tamaño imagen mercPago//
+            .mp{
+                height: 70px;
+            }
+            img{
+                padding: 10px;
+                scale: 1.0;
+                transition: all .5s;
+            }
+            // transicion imagenes //
+            img:hover{
+                scale: 1.4;
+            }
+            /* subtitulos */
+            .subt__mediosdePago{
+                font-size: 1.2rem;
+                font-weight: bold;
+                padding: 15px;
+            }
+            // espaciado entre subtitulos //
+            .efectivo, .transf, .mercPago{
+                margin: 40px 0;
+            }
+        }
+    }
+}

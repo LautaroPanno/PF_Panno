@@ -1,0 +1,47 @@
+// header //
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    // menu de navegación //
+    .navbar{
+        background-color: #164061;
+        border-bottom: #ffffff double 3px;
+        color: white;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+
+        // logo empresa //
+        .logo_img{
+            scale: 0.9;
+            margin-left: 0px;
+            transition: all 1.2s;
+        }
+        // transicion //
+        .logo_img:hover{
+            scale: 1.0;
+        }
+        // posicion de menu //
+        .navbar-collapse{
+            text-align: right;
+            justify-content: flex-end;
+        }
+        // estilo de menu mobile//
+        .dropdown-menu{
+            background-color: #0a5592;
+            border: #013056 double 2px;
+            text-align: end;
+        }
+        .dropdown-item{
+            color:#c5caca;
+        }
+        .dropdown-item:hover{
+            color: #ffffff;
+            background-color: #085da300;
+        }
+    }
+}
