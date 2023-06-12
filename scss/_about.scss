@@ -1,5 +1,5 @@
 /// Pagina "Sobre Nosotros" //
-main{
+.main__about{
     /* contenedor */
     .about{
     padding: 25px;
@@ -11,19 +11,17 @@ main{
             font-weight: bold;
             text-align: center;
             padding: 10px;
-            margin-bottom: 20px;
             text-decoration: underline;
         }
         .conocenos{
             /* subtitulo 1*/
             .about__conocenos__h2{
                 font-weight: bold;
+                padding-bottom: 30px;
             }
             // parrafo 1 //
             .about__conocenos__p{
-                font-style: italic;
                 font-size: 1.2rem;
-                padding-bottom: 30px;
                 span{
                     font-weight: bold;
                 }
@@ -35,11 +33,11 @@ main{
             font-weight: bold;
             text-decoration: underline;
             font-style: italic;
+            padding: 30px 0;
             }
             // parrafo 2 //
             .lavadoInst__p{
                 font-size: 1.2rem;
-                padding-bottom: 30px;
             }
         }
         .lavadoDom{
@@ -48,11 +46,11 @@ main{
                     font-weight: bold;
                     text-decoration: underline;
                     font-style: italic;
+                    padding: 30px 0;
             }
             // parrafo 3//
             .lavadoDom__p{
                 font-size: 1.2rem;
-                padding-bottom: 30px;
 
                 /* link a pagina de contacto */
                 a{

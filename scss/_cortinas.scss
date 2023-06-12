@@ -1,5 +1,5 @@
 //  pagina "Sección de cortinas" //
-main{
+.main__cort{
     .cortinas{
         // contenedor //
         .textCort{
@@ -59,11 +59,11 @@ main{
     margin-bottom: 30px;
     border: 2px double #fff;
     // titulos de las fotos //
-    h4{
+    p{
         font-weight: bold;
         font-style: italic;
         color: #ffffff;
-        background-color: #5f5f5f93;
+        background-color: #4c4c4cb3;
         border-radius: 30px;
         padding: 10px;
     }

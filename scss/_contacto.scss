@@ -1,5 +1,5 @@
 /*------- Pagina de contacto------ */
-main{
+.main__contacto{
     /* titulo */
     .tituloCont{
         background-color: $celeste;
@@ -30,7 +30,7 @@ main{
         width: 95%;
         border: 2px double $azuloscuro;
         border-radius: 10px;
-        background-image: linear-gradient(#132f4d80, #00000080), url(../multimedia/img_backround3.jpg);
+        background-image: linear-gradient(#132f4d80, #00000080), url(../multimedia/alfombra_sillones.jpg);
         background-size: cover;
         // estilos y diseño formulario //
         label{

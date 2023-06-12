@@ -49,7 +49,8 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-end; }
+    align-items: flex-end;
+    padding-top: 10px; }
   .footer .footer__redes__img {
     height: 40px;
     padding: 10px; }
@@ -59,9 +60,10 @@ header {
     color: #ffffff;
     text-align: center;
     font-size: .9rem;
-    padding-bottom: 5px; }
+    padding-bottom: 5px;
+    margin-bottom: 10px; }
 
-main .trespasos {
+.main__index .trespasos {
   text-align: center;
   margin: 40px auto;
   margin-top: 120px;
@@ -71,34 +73,34 @@ main .trespasos {
   background: #aad9ffe6;
   background: radial-gradient(circle, #cce9f9 0%, #aad9ffe6 70%); }
 
-main .trespasos__titulo h1 {
+.main__index .trespasos__titulo h1 {
   color: #10304a;
   font-weight: bold;
   margin: 20px 10px;
   font-style: italic; }
 
-main .trespasos h3 {
+.main__index .trespasos h2 {
   font-weight: bold;
   text-decoration: underline; }
 
-main .trespasos img {
+.main__index .trespasos img {
   height: 40px;
   margin-bottom: 25px;
   text-align: center;
   scale: 1.1;
   transition: all .3s; }
 
-main .trespasos img:hover {
+.main__index .trespasos img:hover {
   scale: 1.6; }
 
-main .paso-1, main .paso-2, main .paso-3 {
+.main__index .paso-1, .main__index .paso-2, .main__index .paso-3 {
   padding: 35px;
   font-size: 1.2rem; }
 
-main .paso-1 p, main .paso-2 p, main .paso-3 p {
+.main__index .paso-1 p, .main__index .paso-2 p, .main__index .paso-3 p {
   font-weight: 400;
   margin-top: 10px; }
-  main .paso-1 p span, main .paso-2 p span, main .paso-3 p span {
+  .main__index .paso-1 p span, .main__index .paso-2 p span, .main__index .paso-3 p span {
     font-weight: bold;
     font-style: italic; }
 
@@ -114,21 +116,21 @@ main .paso-1 p, main .paso-2 p, main .paso-3 p {
     padding: 10px;
     margin: 30px;
     border: double #395b76d5 3px;
-    border-radius: 0px;
+    border-radius: 25px;
     text-align: center;
-    transition: all .5s; }
+    transition: all 1s; }
   .cartas .card:hover {
     border: double #10304a 3px;
     padding: 15px;
-    border-radius: 25px; }
+    border-radius: 0px; }
   .cartas .card p {
     font-weight: bold; }
 
 /*------- Pagina de contacto------ */
-main {
+.main__contacto {
   /* titulo */
   /* formulario de contacto */ }
-  main .tituloCont {
+  .main__contacto .tituloCont {
     background-color: #aad9ffe6;
     width: 70%;
     margin: 0 auto;
@@ -141,9 +143,9 @@ main {
     padding: 20px;
     border-radius: 60px;
     transition: all 1s; }
-  main .tituloCont:hover {
+  .main__contacto .tituloCont:hover {
     border-radius: 0px; }
-  main .formulario__container {
+  .main__contacto .formulario__container {
     color: #ffffff;
     text-align: center;
     font-size: 1.1rem;
@@ -153,13 +155,13 @@ main {
     width: 95%;
     border: 2px double #10304a;
     border-radius: 10px;
-    background-image: linear-gradient(#132f4d80, #00000080), url(../multimedia/img_backround3.jpg);
+    background-image: linear-gradient(#132f4d80, #00000080), url(../multimedia/alfombra_sillones.jpg);
     background-size: cover; }
-    main .formulario__container label {
+    .main__contacto .formulario__container label {
       margin-bottom: 25px; }
-    main .formulario__container textarea {
+    .main__contacto .formulario__container textarea {
       padding: 20px; }
-    main .formulario__container .botonesForm {
+    .main__contacto .formulario__container .botonesForm {
       margin: 15px;
       display: flex;
       flex-direction: row;
@@ -167,64 +169,62 @@ main {
       gap: 25px;
       justify-content: center; }
 
-main {
+.main__about {
   /* contenedor */ }
-  main .about {
+  .main__about .about {
     padding: 25px;
     margin-top: 100px;
     /* titulo */ }
-    main .about .sobreNosotros {
+    .main__about .about .sobreNosotros {
       font-style: italic;
       font-size: 2rem;
       font-weight: bold;
       text-align: center;
       padding: 10px;
-      margin-bottom: 20px;
       text-decoration: underline; }
-    main .about .conocenos {
+    .main__about .about .conocenos {
       /* subtitulo 1*/ }
-      main .about .conocenos .about__conocenos__h2 {
-        font-weight: bold; }
-      main .about .conocenos .about__conocenos__p {
-        font-style: italic;
-        font-size: 1.2rem;
+      .main__about .about .conocenos .about__conocenos__h2 {
+        font-weight: bold;
         padding-bottom: 30px; }
-        main .about .conocenos .about__conocenos__p span {
+      .main__about .about .conocenos .about__conocenos__p {
+        font-size: 1.2rem; }
+        .main__about .about .conocenos .about__conocenos__p span {
           font-weight: bold; }
-    main .about .lavadoInst .lavadoInst__h3 {
+    .main__about .about .lavadoInst .lavadoInst__h3 {
       font-weight: bold;
       text-decoration: underline;
-      font-style: italic; }
-    main .about .lavadoInst .lavadoInst__p {
-      font-size: 1.2rem;
-      padding-bottom: 30px; }
-    main .about .lavadoDom .lavadoDom__h3 {
+      font-style: italic;
+      padding: 30px 0; }
+    .main__about .about .lavadoInst .lavadoInst__p {
+      font-size: 1.2rem; }
+    .main__about .about .lavadoDom .lavadoDom__h3 {
       font-weight: bold;
       text-decoration: underline;
-      font-style: italic; }
-    main .about .lavadoDom .lavadoDom__p {
+      font-style: italic;
+      padding: 30px 0; }
+    .main__about .about .lavadoDom .lavadoDom__p {
       font-size: 1.2rem;
-      padding-bottom: 30px;
       /* link a pagina de contacto */ }
-      main .about .lavadoDom .lavadoDom__p a {
+      .main__about .about .lavadoDom .lavadoDom__p a {
         font-weight: bold;
         text-decoration: none;
         color: #143b5b;
         transition: all .3s; }
-      main .about .lavadoDom .lavadoDom__p a:hover {
+      .main__about .about .lavadoDom .lavadoDom__p a:hover {
         color: #24699b; }
-      main .about .lavadoDom .lavadoDom__p a:visited {
+      .main__about .about .lavadoDom .lavadoDom__p a:visited {
         color: #24699b; }
-      main .about .lavadoDom .lavadoDom__p span {
+      .main__about .about .lavadoDom .lavadoDom__p span {
         font-weight: bold; }
 
 /* --------pagina "Medios de pago" ---------- */
-main .mediosDePago {
+.main__mediosDePago .mediosDePago {
   text-align: center; }
-  main .mediosDePago .row {
+  .main__mediosDePago .mediosDePago .row {
     /* titulo */
     /* subtitulos */ }
-    main .mediosDePago .row .titMediosDePago {
+    .main__mediosDePago .mediosDePago .row .titMediosDePago {
       margin: 0 auto;
       background-color: #aad9ffe6;
       width: 60%;
@@ -239,27 +239,27 @@ main .mediosDePago {
       padding: 20px;
       border-radius: 60px;
       transition: all 1s; }
-    main .mediosDePago .row .titMediosDePago:hover {
+    .main__mediosDePago .mediosDePago .row .titMediosDePago:hover {
       border-radius: 0px; }
-    main .mediosDePago .row .mp {
+    .main__mediosDePago .mediosDePago .row .mp {
       height: 70px; }
-    main .mediosDePago .row img {
+    .main__mediosDePago .mediosDePago .row img {
       padding: 10px;
       scale: 1.0;
       transition: all .5s; }
-    main .mediosDePago .row img:hover {
+    .main__mediosDePago .mediosDePago .row img:hover {
       scale: 1.4; }
-    main .mediosDePago .row .subt__mediosdePago {
+    .main__mediosDePago .mediosDePago .row .subt__mediosdePago {
       font-size: 1.2rem;
       font-weight: bold;
       padding: 15px; }
-    main .mediosDePago .row .efectivo, main .mediosDePago .row .transf, main .mediosDePago .row .mercPago {
+    .main__mediosDePago .mediosDePago .row .efectivo, .main__mediosDePago .mediosDePago .row .transf, .main__mediosDePago .mediosDePago .row .mercPago {
       margin: 40px 0; }
 
-main .cortinas .textCort {
+.main__cort .cortinas .textCort {
   padding: 10px 30px;
   text-align: center; }
-  main .cortinas .textCort .tituloCort {
+  .main__cort .cortinas .textCort .tituloCort {
     background-color: #aad9ffe6;
     width: 80%;
     margin: 0 auto;
@@ -273,20 +273,20 @@ main .cortinas .textCort {
     padding: 20px;
     border-radius: 60px;
     transition: all 1s; }
-  main .cortinas .textCort .tituloCort:hover {
+  .main__cort .cortinas .textCort .tituloCort:hover {
     border-radius: 0px;
     border: #10304a 3px solid; }
-  main .cortinas .textCort .subtCort {
+  .main__cort .cortinas .textCort .subtCort {
     text-decoration: underline;
     margin: 40px 0;
     font-size: 1.5rem; }
-  main .cortinas .textCort p {
+  .main__cort .cortinas .textCort p {
     font-size: 1.3rem;
     padding: 20px;
     font-style: italic; }
-  main .cortinas .textCort .subtCort__2 {
+  .main__cort .cortinas .textCort .subtCort__2 {
     padding: 30px 0; }
-  main .cortinas .textCort span {
+  .main__cort .cortinas .textCort span {
     font-weight: bold;
     font-style: italic; }
 
@@ -297,18 +297,18 @@ main .cortinas .textCort {
   z-index: 10;
   margin-bottom: 30px;
   border: 2px double #fff; }
-  .imgCort h4 {
+  .imgCort p {
     font-weight: bold;
     font-style: italic;
     color: #ffffff;
-    background-color: #5f5f5f93;
+    background-color: #4c4c4cb3;
     border-radius: 30px;
     padding: 10px; }
 
-main .alfombras .textAlf {
+.main__alf .alfombras .textAlf {
   padding: 10px 30px;
   text-align: center; }
-  main .alfombras .textAlf .tituloAlf {
+  .main__alf .alfombras .textAlf .tituloAlf {
     background-color: #aad9ffe6;
     width: 80%;
     margin: 0 auto;
@@ -322,16 +322,16 @@ main .alfombras .textAlf {
     padding: 20px;
     border-radius: 50px;
     transition: all 1s; }
-  main .alfombras .textAlf .tituloAlf:hover {
+  .main__alf .alfombras .textAlf .tituloAlf:hover {
     border-radius: 0px;
     border: #10304a 3px solid; }
-  main .alfombras .textAlf .descAlf {
+  .main__alf .alfombras .textAlf .descAlf {
     font-size: 1.5rem;
     padding: 20px;
     margin: 30px; }
-  main .alfombras .textAlf .textAlf__ejemplos {
+  .main__alf .alfombras .textAlf .textAlf__ejemplos {
     font-size: 1.5rem; }
-  main .alfombras .textAlf span {
+  .main__alf .alfombras .textAlf span {
     font-weight: bold;
     font-style: italic; }
 
@@ -341,8 +341,8 @@ main .alfombras .textAlf {
   height: 250px;
   margin: 30px;
   border-radius: 20px;
-  border: double #395b76d5 3px;
-  opacity: .9;
+  border: solid #395b76d5 3px;
+  opacity: .8;
   object-fit: cover;
   object-position: center;
   transition: all 1s; }
@@ -350,14 +350,13 @@ main .alfombras .textAlf {
 .imgAlf img:hover {
   opacity: 1;
   border: double #10304a 3px;
-  width: 270px;
-  height: 270px;
+  padding: 5px;
   border-radius: 0px; }
 
-main .tapizados .textTapi {
+.main__tapi .tapizados .textTapi {
   padding: 10px 30px;
   text-align: center; }
-  main .tapizados .textTapi .tituloTapi {
+  .main__tapi .tapizados .textTapi .tituloTapi {
     background-color: #aad9ffe6;
     width: 80%;
     margin: 0 auto;
@@ -371,16 +370,16 @@ main .tapizados .textTapi {
     padding: 20px;
     border-radius: 60px;
     transition: all 1s; }
-  main .tapizados .textTapi .tituloTapi:hover {
+  .main__tapi .tapizados .textTapi .tituloTapi:hover {
     border-radius: 0px;
     border: #10304a 3px solid; }
-  main .tapizados .textTapi .descTapi {
+  .main__tapi .tapizados .textTapi .descTapi {
     font-size: 1.5rem;
     padding: 20px;
     margin: 30px; }
-  main .tapizados .textTapi .text__decor {
+  .main__tapi .tapizados .textTapi .text__decor {
     font-style: italic; }
-  main .tapizados .textTapi .text__decor2 {
+  .main__tapi .tapizados .textTapi .text__decor2 {
     font-weight: bold;
     font-style: italic; }
 
@@ -391,3 +390,46 @@ main .tapizados .textTapi {
   z-index: 10;
   margin-bottom: 30px;
   border: 2px double #fff; }
+
+.main__404 h1 {
+  margin-top: 140px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  font-style: italic;
+  font-size: 1.5rem;
+  font-weight: bold; }
+
+.main__404 .container__404 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+  .main__404 .container__404 .error_404_container .error_404_gif {
+    width: 30vh;
+    margin: 30px 20px;
+    transition: 1s;
+    scale: 1.0;
+    box-shadow: 2px 2px 15px 1px #ffffff, -2px -2px 15px 1px #ffffff; }
+  .main__404 .container__404 .error_404_gif:hover {
+    box-shadow: 2px 2px 15px 1px #ffe2a5db, -2px -2px 15px 1px #ffe2a5db; }
+
+.main__404 .boton_volver {
+  text-decoration: none;
+  padding: 20px;
+  background-color: #00000000;
+  color: #143b5b;
+  border: 2px #10304a solid;
+  border-radius: 30px;
+  margin: 40px 0;
+  box-shadow: 2px 2px 10px 2px #545454;
+  transition: all .5s; }
+  .main__404 .boton_volver a {
+    text-decoration: none;
+    color: #143b5b;
+    font-size: 1.5rem;
+    font-weight: bold; }
+
+.main__404 .boton_volver:hover {
+  background-color: #aad9ffe6; }

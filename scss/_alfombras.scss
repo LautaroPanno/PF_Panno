@@ -1,5 +1,5 @@
 //  pagina "Sección de alfombras" //
-main{
+.main__alf{
     .alfombras{
         // contenedor general//
         .textAlf{
@@ -49,8 +49,8 @@ main{
     height: 250px;
     margin: 30px;
     border-radius: 20px;
-    border: double #395b76d5 3px;
-    opacity: .9;
+    border: solid #395b76d5 3px;
+    opacity: .8;
     object-fit: cover;
     object-position: center ;
     transition: all 1s;
@@ -59,7 +59,6 @@ main{
 .imgAlf img:hover{
     opacity: 1;
     border: double $azuloscuro 3px;
-    width: 270px;
-    height: 270px;
+    padding: 5px;
     border-radius: 0px;
 }
