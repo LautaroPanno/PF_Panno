@@ -17,29 +17,44 @@ header {
   header .navbar {
     background-color: #164061;
     border-bottom: #ffffff double 3px;
-    color: white;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000; }
-    header .navbar .logo_img {
-      scale: 0.9;
-      margin-left: 0px;
-      transition: all 1.2s; }
-    header .navbar .logo_img:hover {
-      scale: 1.0; }
+    header .navbar .navbar-brand .logo_img {
+      height: 40px; }
     header .navbar .navbar-collapse {
       text-align: right;
       justify-content: flex-end; }
     header .navbar .dropdown-menu {
       background-color: #0a5592;
       border: #013056 double 2px;
-      text-align: end; }
+      text-align: end;
+      margin-left: 15px;
+      margin-right: 15px;
+      border-radius: 20px; }
     header .navbar .dropdown-item {
-      color: #c5caca; }
+      color: #dbdbdb;
+      margin-bottom: 5px; }
     header .navbar .dropdown-item:hover {
       color: #ffffff;
       background-color: #085da300; }
+
+.navbar-dark .navbar-nav .nav-link {
+  font-weight: 400;
+  color: #ffffff;
+  margin-right: 15px;
+  border-radius: 60px;
+  padding: 10px 20px;
+  transition: all .5s; }
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  background-color: #058adc48; }
+
+.active {
+  background-color: #058adc5f;
+  color: #ffffff;
+  border: 1px #d3e7ff solid; }
 
 .footer {
   height: 80px;
