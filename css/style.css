@@ -143,46 +143,41 @@ header {
 
 /*------- Pagina de contacto------ */
 .main__contacto {
-  /* titulo */
-  /* formulario de contacto */ }
+  /* titulo */ }
   .main__contacto .tituloCont {
     background-color: #aad9ffe6;
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     text-align: center;
     border: #10304a 3px solid;
     border-radius: 60px;
     margin-top: 120px;
+    margin-bottom: 30px;
     font-weight: bold;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     padding: 20px;
     border-radius: 60px;
     transition: all 1s; }
   .main__contacto .tituloCont:hover {
     border-radius: 0px; }
-  .main__contacto .formulario__container {
-    color: #ffffff;
-    text-align: center;
-    font-size: 1.1rem;
+
+.contenedor {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 40px;
+  border: 5px double white;
+  border-radius: 40px; }
+  .contenedor .form-label {
     font-weight: bold;
-    padding: 30px;
-    margin: 40px auto;
-    width: 95%;
-    border: 2px double #10304a;
-    border-radius: 10px;
-    background-image: linear-gradient(#132f4d80, #00000080), url(../multimedia/alfombra_sillones.jpg);
-    background-size: cover; }
-    .main__contacto .formulario__container label {
-      margin-bottom: 25px; }
-    .main__contacto .formulario__container textarea {
-      padding: 20px; }
-    .main__contacto .formulario__container .botonesForm {
-      margin: 15px;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      gap: 25px;
-      justify-content: center; }
+    padding-top: 20px; }
+  .contenedor .form-control {
+    margin: 0 auto;
+    width: 90%; }
+  .contenedor .btn {
+    margin: 20px 0; }
+  .contenedor .border {
+    border: 2px solid #10304a; }
 
 .main__about {
   /* contenedor */ }

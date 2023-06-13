@@ -58,45 +58,34 @@
 
 <main class="main__contacto">
 <!------ Formulario de contacto ------>
+<!-- titulo -->
+<h1 class="tituloCont">Contactanos para agendar tu presupuesto</h1>
 <section>
-    <!-- titulo -->
-    <h1 class="tituloCont">Contactanos para agendar tu presupuesto</h1>
-    <!-- contenedor -->
-    <div class="formulario__container">
-        <form action="" class="formu">
-            <!-- formulario -->
-            <div>
-                <label for="name"><p>Nombre</p></label>
-                <input type="text" placeholder=" Lionel Messi">
-            </div>
+    <!-- contenedor formulario -->
+    <div class="contenedor">
 
-            <div>
-                <label for="mail"><p>Email *</p></label>
-                <input type="email" required placeholder="  leomessi10@gmail.com">
-            </div>
+        <!-- formulario -->
+        <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Nombre</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Lionel Messi"></textarea>
+        </div>
 
-            <div>
-                <label for="Localidad"><p>Ciudad *</p></label>
-                <input type="text" placeholder="  Buenos Aires" required>
-            </div>
+        <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Dirección de E-mail</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="leomessi10@gmail.com">
+        </div>
 
-            <div>
-                <label for="Descripción"><p>Contanos: qué te interesaría lavar y las medidas:</p></label>
-            </div>
+        <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Contanos: qué te interesaría lavar y las medidas</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="(Por ejemplo) Una cortina roller de 2 x 2,50 mts..."></textarea>
+        </div>
 
-            <div>
-                <textarea class="descForm" rows="5" cols="20" placeholder="(Por ejemplo) Una cortina roller de 2x2,50 mts..."></textarea>
-            </div>
-            
-            <div class="botonesForm">
-                <div class="botonEnviar">
-                    <input type="submit" value="Enviar">  
-                </div>
-                <div class="botonLimpiar">
-                        <input type="reset" value="Limpiar formulario">
-                </div>
-            </div>
-        </form>
+        <div class="mb-3">
+            <label for="formFileMultiple" class="form-label">¿Tenés foto del producto a limpiar?</label>
+            <input class="form-control" type="file" id="formFileMultiple" multiple>
+          </div>
+
+        <button type="submit" class="btn btn-primary">Enviar</button>
     </div>
 </section>
 </main>
